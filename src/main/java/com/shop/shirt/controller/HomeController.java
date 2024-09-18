@@ -1,4 +1,4 @@
-package com.learn.taco.controller;
+package com.shop.shirt.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

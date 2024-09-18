@@ -1,10 +1,10 @@
-package com.learn.taco;
+package com.shop.shirt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TacoApplicationTests {
+class ShopApplicationTests {
 
 	@Test
 	void contextLoads() {

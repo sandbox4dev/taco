@@ -1,13 +1,12 @@
-package com.learn.taco;
+package com.shop.shirt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TacoApplication {
+public class ShopApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TacoApplication.class, args);
+		SpringApplication.run(ShopApplication.class, args);
 	}
-
 }
