@@ -10,10 +10,10 @@ public class ShirtImpl implements Shirt {
 
     private String id;
     private String name;
-    private ShirtType shirtType;
     private String shirtColor;
     private String shirtSize;
     private String shirtBrand;
     private String shirtMaterial;
-    private List<ShirtDecoration> shirtDecoration;
+    private List<ShirtType> shirtTypes;
+    private List<ShirtDecoration> shirtDecorations;
 }

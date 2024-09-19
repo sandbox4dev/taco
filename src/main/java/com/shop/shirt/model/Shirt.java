@@ -11,8 +11,8 @@ public interface Shirt {
     void setId(String id);
     String getName();
     void setName(String name);
-    ShirtType getShirtType();
-    void setShirtType(ShirtType shirtType);
+    List<ShirtType> getShirtTypes();
+    void setShirtTypes(List<ShirtType> shirtTypes);
     String getShirtColor();
     void setShirtColor(String shirtColor);
     String getShirtSize();
@@ -21,6 +21,6 @@ public interface Shirt {
     void setShirtBrand(String shirtBrand);
     String getShirtMaterial();
     void setShirtMaterial(String shirtMaterial);
-    List<ShirtDecoration> getShirtDecoration();
-    void setShirtDecoration(List<ShirtDecoration> shirtDecoration);
+    List<ShirtDecoration> getShirtDecorations();
+    void setShirtDecorations(List<ShirtDecoration> shirtDecoration);
 }

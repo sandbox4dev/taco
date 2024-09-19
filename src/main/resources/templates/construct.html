@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Shirt Cloud</title>
+    <!--<link rel="stylesheet" th:href="@{/css/style.css}"/>-->
+</head>
+
+<body>
+<h1>Welcome to Shirt Constructor</h1>
+<!--<img th:src="@{/images/shirt.png}">-->
+
+<form method="POST" th:object="${shirtImpl}">
+    <div class="grid">
+        <div class="shirt-styleType-group" id="shirt-types">
+            <h3>Chose your shirt style</h3>
+            <div th:each="shirtType : ${shirtTypes}">
+                <input th:field="*{shirtTypes}" type="checkbox"
+                       th:value="${shirtType.id}"/>
+                <span th:text="${shirtType.name}">Shirt Type</span><br/>
+            </div>
+        </div>
+        <div class="decoration-group" id="shirt-decors">
+            <h3>Chose your decoration</h3>
+            <div th:each="decoration : ${decorationTypes}">
+                <input th:field="*{shirtDecorations}" type="checkbox"
+                       th:value="${decoration.id}"/>
+                <span th:text="${decoration.name}">Shirt Decoration</span><br/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>Name your shirt construction</h3>
+        <input styleType="text" th:field="*{name}"/>
+        <br/>
+        <br/>
+        <button>Submit your shirt</button>
+    </div>
+</form>
+</body>
+</html>
